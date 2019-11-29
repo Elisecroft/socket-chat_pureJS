@@ -12,9 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   //Emit a username
 	send_username.addEventListener('click', () => {
-    console.log('emit username')
     socket.emit('change_username', {username : username.value});
-    console.log(username)
   });
   
   //Emit message
